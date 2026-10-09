@@ -1,11 +1,11 @@
-# Open Shop 模板自动化
+# Prime Order 模板自动化
 
-本文档说明 Open Shop 如何从单店项目整理成可复用的小程序电商模板。文档只写中文，默认读者是国内微信小程序开发者、商家或运营人员。
+本文档说明 Prime Order 如何从单店项目整理成可复用的小程序电商模板。文档只写中文，默认读者是国内微信小程序开发者、商家或运营人员。
 
 ## 仓库形态
 
 - `miniprogram/` 是唯一的小程序源码目录。
-- `cloudfunctions/` 存放 Open Shop 自己维护的 CloudBase 云函数。
+- `cloudfunctions/` 存放 Prime Order 自己维护的 CloudBase 云函数。
 - `admin-web/` 是商家运营后台，属于模板产品的一部分。
 - `scripts/sql/` 存放数据库 schema 和示例数据。
 - `scripts/bootstrap-shop.js` 根据店铺配置生成本地项目配置。

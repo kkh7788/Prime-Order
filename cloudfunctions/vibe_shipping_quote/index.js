@@ -4,7 +4,7 @@ const { getApp } = require('./db');
 const { calculateShipping } = require('./shipping');
 
 const PICKUP_SETTING_KEY = 'pickup_config';
-const DEFAULT_SHOP_NAME = process.env.OPEN_SHOP_NAME || 'Open Shop';
+const DEFAULT_SHOP_NAME = process.env.OPEN_SHOP_NAME || 'Prime Order';
 const DEFAULT_PICKUP_CONFIG = {
   storeName: DEFAULT_SHOP_NAME,
   pickupAddress: '',

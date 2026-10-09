@@ -20,7 +20,7 @@ type PickupForm = PickupConfig;
 const inputCls = 'w-full border border-[#E5E5E5] rounded px-3 py-2 text-sm outline-none focus:border-primary transition-colors';
 const disabledInputCls = `${inputCls} disabled:bg-[#F9FAFB] disabled:text-[#9CA3AF] disabled:cursor-not-allowed`;
 const MUNICIPALITIES = new Set(['北京市', '天津市', '上海市', '重庆市']);
-const SHOP_NAME = import.meta.env.VITE_SHOP_NAME || 'Open Shop';
+const SHOP_NAME = import.meta.env.VITE_SHOP_NAME || 'Prime Order';
 
 function provinceOptions() {
   return regionData;

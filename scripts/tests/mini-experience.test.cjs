@@ -14,7 +14,7 @@ function page(name,callFunction) {
  const app={globalData:{cart:[]}};
  const wx={cloud:{callFunction},showToast(){},switchTab(){},createSelectorQuery(){return {in(){return this},select(){return this},selectAll(){return this},boundingClientRect(){return this},exec(){}}}};
  const client=catalogClient(callFunction);
- vm.runInNewContext(fs.readFileSync(path.join(root,`pages/${name}/index.js`),'utf8'),{Page:p=>definition=p,wx,getApp:()=>app,setTimeout:()=>1,clearTimeout(){},console:{error(){}},require:n=>n.includes('catalog')?client:n.includes('share')?{enableShareMenu(){}}:{shopName:'Open Shop'}});
+ vm.runInNewContext(fs.readFileSync(path.join(root,`pages/${name}/index.js`),'utf8'),{Page:p=>definition=p,wx,getApp:()=>app,setTimeout:()=>1,clearTimeout(){},console:{error(){}},require:n=>n.includes('catalog')?client:n.includes('share')?{enableShareMenu(){}}:{shopName:'Prime Order'}});
  const instance={...definition,data:structuredClone(definition.data),setData(d){Object.assign(this.data,d)}};
  return {instance,app};
 }

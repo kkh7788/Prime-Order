@@ -1,6 +1,6 @@
 # 安全政策
 
-Open Shop 是微信小程序电商模板，代码会被不同商家部署到各自的微信小程序、CloudBase 环境和支付配置中。请不要在公开 Issue、PR、评论或截图中暴露 appid、CloudBase 环境 ID、访问密钥、支付商户信息、Webhook、数据库连接信息或真实用户数据。
+Prime Order 是微信小程序电商模板，代码会被不同商家部署到各自的微信小程序、CloudBase 环境和支付配置中。请不要在公开 Issue、PR、评论或截图中暴露 appid、CloudBase 环境 ID、访问密钥、支付商户信息、Webhook、数据库连接信息或真实用户数据。
 
 ## 支持范围
 
@@ -12,7 +12,7 @@ Open Shop 是微信小程序电商模板，代码会被不同商家部署到各�
 
 如果你发现安全问题，请优先通过 GitHub 的私密漏洞报告入口提交：
 
-<https://github.com/jamezzh7/open-shop-wechat-template/security/advisories/new>
+<https://github.com/kkh7788/Prime-Order/security/advisories/new>
 
 报告中建议包含：
 

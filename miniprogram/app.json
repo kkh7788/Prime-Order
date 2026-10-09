@@ -44,7 +44,7 @@
     "backgroundColor": "#F6F4EF",
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#F6F4EF",
-    "navigationBarTitleText": "Open Shop",
+    "navigationBarTitleText": "Prime Order",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",

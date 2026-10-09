@@ -45,7 +45,7 @@
     "disableSWC": true
   },
   "appid": "wx26a32edd42910f23",
-  "projectname": "open-shop",
+  "projectname": "prime-order",
   "libVersion": "2.20.1",
   "condition": {
     "search": {

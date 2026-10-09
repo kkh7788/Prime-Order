@@ -1,6 +1,6 @@
 # SQL 初始化说明
 
-本目录存放 Open Shop 模板的关系型数据库 schema 和示例数据。
+本目录存放 Prime Order 模板的关系型数据库 schema 和示例数据。
 
 ## 数据库
 

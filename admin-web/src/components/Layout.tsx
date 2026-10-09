@@ -8,7 +8,7 @@ const NAV = [
   { to: '/shipping',  label: '运费管理' },
 ];
 
-const SHOP_NAME = import.meta.env.VITE_SHOP_NAME || 'Open Shop';
+const SHOP_NAME = import.meta.env.VITE_SHOP_NAME || 'Prime Order';
 
 export default function Layout() {
   const navigate = useNavigate();

@@ -1,8 +1,10 @@
-# Open Shop 微信小程序电商模板
+# Prime Order 微信小程序电商模板
 
-Open Shop 是一个基于微信原生小程序和 CloudBase 的电商模板，适合做点单、商品售卖、配送/自提、订单管理和商家后台。
+Prime Order 是一个基于微信原生小程序和 CloudBase 的电商模板，适合做点单、商品售卖、配送/自提、订单管理和商家后台。
 
 本项目文档面向中文使用场景编写。
+
+基于 [Open Shop](https://github.com/jamezzh7/open-shop-wechat-template) 改造，采用暖白与深墨绿界面。原项目版权与 MIT 许可保留于 `LICENSE`。
 
 ## 功能
 

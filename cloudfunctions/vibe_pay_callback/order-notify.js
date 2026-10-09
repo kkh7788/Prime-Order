@@ -23,7 +23,7 @@ function orderNotifyWebhookUrl() {
 }
 
 function shopName() {
-  return String(process.env.OPEN_SHOP_NAME || 'Open Shop').trim() || 'Open Shop';
+  return String(process.env.OPEN_SHOP_NAME || 'Prime Order').trim() || 'Prime Order';
 }
 
 function postJson(url, payload) {

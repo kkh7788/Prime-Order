@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { auth } from '../cloudbase';
 
-const SHOP_NAME = import.meta.env.VITE_SHOP_NAME || 'Open Shop';
+const SHOP_NAME = import.meta.env.VITE_SHOP_NAME || 'Prime Order';
 
 export default function Login() {
   const navigate = useNavigate();
