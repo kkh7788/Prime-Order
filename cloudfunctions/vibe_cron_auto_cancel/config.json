@@ -1,0 +1,9 @@
+{
+  "triggers": [
+    {
+      "name": "cancel_unpaid_every_minute",
+      "type": "timer",
+      "config": "0 * * * * * *"
+    }
+  ]
+}

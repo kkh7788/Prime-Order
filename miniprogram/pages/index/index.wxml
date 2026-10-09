@@ -1,0 +1,24 @@
+<view class="home-page">
+  <view class="home-brand"><view class="brand-mark">食</view><view><text class="brand-name">{{shopName}}</text><text class="brand-note">一餐一味，认真对待</text></view><text class="brand-edition">用餐时刻</text></view>
+  <view class="home-hero">
+    <image wx:if="{{homeHeroImage}}" class="hero-photo" src="{{homeHeroImage}}" mode="aspectFill" binderror="onHeroError" />
+    <view wx:if="{{homeHeroImage}}" class="hero-shade"></view>
+    <image wx:else class="hero-art" src="/images/dining-hero.png" mode="aspectFit" />
+    <view class="hero-copy"><text class="hero-eyebrow">THE EVERYDAY TABLE</text><text class="hero-title">把一餐，
+留给好味道。</text><text class="hero-subtitle">从一份喜欢的味道开始</text><button class="hero-button" bindtap="onStartShopping" hover-class="button-pressed">开始点单 <text>↗</text></button></view>
+    <text class="hero-caption">好好吃饭 · 认真生活</text>
+  </view>
+  <view class="home-shortcuts">
+    <view class="shortcut" bindtap="onViewOrders" hover-class="surface-pressed"><image src="/images/icons/tabbar/orders-active.png"/><view><text class="shortcut-title">我的订单</text><text class="shortcut-sub">查看用餐进度</text></view><text class="shortcut-arrow">›</text></view>
+    <view class="shortcut" bindtap="onViewProfile" hover-class="surface-pressed"><image src="/images/icons/tabbar/profile-active.png"/><view><text class="shortcut-title">会员账户</text><text class="shortcut-sub">余额与个人信息</text></view><text class="shortcut-arrow">›</text></view>
+  </view>
+  <view class="home-section-heading"><view><text class="section-eyebrow">ON THE MENU</text><text class="home-section-title">这一餐，吃点什么</text></view><view class="menu-link" bindtap="onStartShopping">全部菜单 <text>↗</text></view></view>
+  <view wx:if="{{loading}}" class="featured-loading"><view class="skeleton-line"></view><view class="skeleton-line skeleton-line--short"></view></view>
+  <view wx:elif="{{loadError && !featured.length}}" class="home-empty"><text>菜单暂时没有加载出来</text><view class="state-action" bindtap="onRetry">重新加载</view></view>
+  <view wx:elif="{{!featured.length}}" class="home-empty"><text>菜单正在准备中</text><text class="home-empty-sub">稍后再来看看，或联系客服了解详情</text></view>
+  <view wx:else class="featured-list">
+    <view wx:for="{{featured}}" wx:key="id" class="featured-card" bindtap="onStartShopping" hover-class="surface-pressed"><food-image class="featured-image" src="{{item.image}}"/><view class="featured-copy"><text class="featured-name">{{item.title}}</text><text class="featured-desc">{{item.description || '选一份喜欢的味道'}}</text><text class="featured-price">¥{{item.priceText}}<text class="featured-suffix">{{item.priceSuffix}}</text></text></view><text class="featured-arrow">↗</text></view>
+  </view>
+  <view class="home-footer"><view class="footer-line"></view><text>好味道，值得慢慢享用</text><view class="footer-line"></view></view>
+</view>
+<button class="customer-service-fab" open-type="contact" session-from="{{customerServiceSession}}" send-message-title="{{customerServiceTitle}}" send-message-path="/pages/index/index" show-message-card="true"><image class="customer-service-fab__icon" src="/images/icons/customer-service.svg"/><text class="customer-service-fab__label">客服</text></button>

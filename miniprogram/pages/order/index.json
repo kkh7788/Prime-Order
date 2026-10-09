@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "点单",
+  "usingComponents": {
+    "food-image": "/components/food-image/index"
+  }
+}

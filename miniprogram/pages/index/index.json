@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "food-image": "/components/food-image/index"
+  }
+}

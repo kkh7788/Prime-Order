@@ -1,0 +1,1 @@
+<image class="food-image" src="{{src && !failed ? src : '/images/dining-placeholder.png'}}" mode="aspectFill" lazy-load binderror="onImageError" />

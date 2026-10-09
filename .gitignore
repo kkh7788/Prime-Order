@@ -1,0 +1,44 @@
+# macOS metadata
+.DS_Store
+**/.DS_Store
+
+# WeChat DevTools private/device-specific config
+project.private.config.json
+
+# Local shop/operator config and secrets
+.env
+.env.*
+!.env.example
+*.local
+shops/*.local.json
+
+# Local AI/agent workspace files
+AGENTS.md
+CLAUDE.md
+.ai/
+.agents/
+.claude/
+.codex/
+.mcp.json
+skills-lock.json
+
+# Build outputs
+dist/
+build/
+admin-web/dist/
+
+# CloudBase console-installed payment template source
+cloudfunctions/wxpayFunctions/
+
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Local tools, generated archives and credential files
+*.log
+*.tsbuildinfo
+*.pem
+*.key
+*.p12
+*.pfx
+*.zip
